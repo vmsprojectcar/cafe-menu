@@ -1,0 +1,40 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "coffee"
+    label: "Καφέδες"
+    folder: "menu/coffee"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Τίτλος", name: "title", widget: "string"}
+      - {label: "Περιγραφή", name: "description", widget: "text"}
+      - {label: "Τιμή", name: "price", widget: "string"}
+      - {label: "Εικόνα", name: "image", widget: "image"}
+
+  - name: "drinks"
+    label: "Ροφήματα"
+    folder: "menu/drinks"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Τίτλος", name: "title", widget: "string"}
+      - {label: "Περιγραφή", name: "description", widget: "text"}
+      - {label: "Τιμή", name: "price", widget: "string"}
+      - {label: "Εικόνα", name: "image", widget: "image"}
+
+  - name: "snacks"
+    label: "Snacks"
+    folder: "menu/snacks"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Τίτλος", name: "title", widget: "string"}
+      - {label: "Περιγραφή", name: "description", widget: "text"}
+      - {label: "Τιμή", name: "price", widget: "string"}
+      - {label: "Εικόνα", name: "image", widget: "image"}
